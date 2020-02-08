@@ -1,6 +1,12 @@
 #!/usr/bin/bash
+# liujun.gz@gmail.com
+
+# NOTE: You should install the netmiko before execute this script.
 
 site_path=$(pip show netmiko|awk '/Location/{print $2}')
+echo 
+echo "NOTE: You should install the netmiko before execute this script."
+echo 
 echo "Step.1 Find the location of the installed 'netmiko'"
 echo " Result: $site_path"
 echo
